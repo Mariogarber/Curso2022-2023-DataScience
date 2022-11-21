@@ -318,7 +318,6 @@ vcard:hasUID a owl:ObjectProperty ;
         sch:Neighbourdhood ;
     rdfs:range sce:int .
 
-
 ###  http://xmlns.com/foaf/0.1/name
 foaf:name a owl:ObjectProperty ;
     rdfs:label "name" ;
@@ -332,6 +331,11 @@ foaf:name a owl:ObjectProperty ;
         sch:School ;
     rdfs:range xsd:string .
 
+sce:faxNumber a owl:ObjectProperty ;
+    rdfs:label "has fax number" ;
+    rdfs:domain lib:ContactInfo,
+	sch:ContactInfo ;
+    rdfs:range sce:text .
 
 #################################################################
 #    Classes
@@ -410,4 +414,3 @@ sch:Transport a owl:Class ;
 ### https://www.biblioescuela.educamadrid.org/ontologies/Library#openingHours
 lib:openingHours a owl:Class ;
     rdfs:label "opening Hours" .
-
